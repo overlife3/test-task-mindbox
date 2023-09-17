@@ -1,0 +1,20 @@
+.wrapper {
+}
+
+.btn {
+  padding: 2px 4px;
+  border: 1px solid transparent;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #b3b3b3;
+  font-size: 14px;
+}
+.btn + .btn {
+  margin-left: 6px;
+}
+.btn.selected,
+.btn:hover {
+  border: 1px solid var(--blue-color);
+  border-radius: 3px;
+}

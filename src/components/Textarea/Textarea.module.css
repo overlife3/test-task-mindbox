@@ -1,0 +1,29 @@
+.textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.textarea_grow_wrap {
+  display: grid;
+}
+.textarea_grow_wrap::after {
+  content: attr(data-replicated-value) " ";
+  white-space: pre-wrap;
+  visibility: hidden;
+  word-wrap: break-word;
+  overflow-x: auto;
+}
+
+.textarea_grow_wrap > textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+.textarea_grow_wrap > textarea,
+.textarea_grow_wrap::after {
+  padding: 2px 0;
+  grid-area: 1 / 1 / 2 / 2;
+}

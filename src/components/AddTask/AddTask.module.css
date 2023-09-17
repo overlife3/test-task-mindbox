@@ -1,0 +1,62 @@
+.add_task {
+  display: flex;
+  height: 45px;
+
+  border: var(--border);
+}
+
+.add_task {
+  padding: var(--block-padding-vertical) var(--block-padding-horizontal);
+}
+
+.add_task input {
+  background-color: transparent;
+  width: 100%;
+  font-family: var(--font);
+  font-size: 20px;
+  padding: 4px 8px;
+  padding-left: 16px;
+  border: none;
+  outline: none;
+}
+
+.add_task input::placeholder {
+  color: var(--grey-color);
+}
+
+.add_task button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: var(--font);
+}
+
+.arrow {
+  padding: 0;
+  width: 25px;
+  padding: 0 3px;
+  flex-shrink: 0;
+}
+
+.arrow svg {
+  width: 100%;
+  height: auto;
+  fill: var(--grey-color);
+}
+.arrow.active svg {
+  fill: var(--blue-color);
+}
+
+.arrow stroke {
+  stroke-width: 400;
+}
+
+.add {
+  font-size: 16px;
+  border: none;
+  color: var(--grey-color);
+}

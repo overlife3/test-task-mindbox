@@ -1,0 +1,23 @@
+.wrapper {
+  width: 100%;
+}
+
+.text {
+  margin-top: 2px;
+  width: fit-content;
+}
+
+.wrapper.completed .text {
+  color: var(--grey-color);
+  text-decoration: line-through;
+}
+.wrapper .edit_task_text {
+  display: none;
+}
+
+.wrapper.change .edit_task_text {
+  display: block;
+}
+.wrapper.change .text {
+  display: none;
+}

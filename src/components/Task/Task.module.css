@@ -1,0 +1,44 @@
+.task {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  min-height: 45px;
+  border: var(--border);
+  padding: var(--block-padding-vertical) var(--block-padding-horizontal);
+}
+
+.task.completed .toggle_completed {
+  background-color: var(--blue-color);
+  border-color: var(--blue-color);
+}
+
+.toggle_completed {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--grey-color);
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+}
+
+.remove_task {
+  width: 30px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.remove_task svg {
+  width: 100%;
+  stroke: var(--grey-color);
+  stroke-width: 3px;
+}
+
+.remove_task:hover svg {
+  stroke: var(--blue-color);
+}
